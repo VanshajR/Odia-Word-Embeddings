@@ -39,7 +39,8 @@ All data is available in the [odia-word-embeddings-data](https://huggingface.co/
 All models are available in the [odia-word-embeddings](https://huggingface.co/VanshajR/odia-word-embeddings) repository:
 
 #### Word2Vec
-- `word2vec.model` - Trained Word2Vec model
+- `word2vec.model` - Trained CBOW Word2Vec model
+- `word2vec_sg.model` - Trained Skip Gram Word2Vec model
 
 #### GloVe
 - `glove_embeddings.npy` - Trained GloVe embeddings
@@ -95,13 +96,8 @@ python scripts/train_glove.py
 
 ### Evaluating Models
 
-```bash
-python scripts/evaluate_embeddings.py
-```
+Run the evaluate_embeddings.ipynb notebook
 
-## Results
-
-[Add your evaluation results and comparisons here]
 
 ## Contributing
 
@@ -114,4 +110,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - OdiEnCorp team for providing the monolingual Odia corpus
-- [Add other acknowledgments here]
+- Wikipedia for their public articles
